@@ -14,7 +14,7 @@ const CreateRandomAge = () =>{
             {data.map((el) => {
                 return (
                     <div className='userContainer' key={el.id} >
-                        <img className='photo' src={el.avatar} alt="My Image"></img>
+                        <img src={el.avatar} alt="persons"></img>
                         <div className='userInformation'>
                             <div className='name'>Name : {el.last_name + " " + el.first_name}</div>
                             <div className='email'>Email : {el.email}</div>
