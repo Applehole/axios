@@ -1,0 +1,33 @@
+/* .Users{
+
+} */
+
+.userContainer{
+    display: flex;
+    margin: 10px auto;
+    width: 350px;
+    border: 2px solid;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.userInformation{
+    margin: auto;
+}
+
+.photo{
+    height: 124px;
+    width: 124px;
+}
+
+.name{
+    margin: 5px;
+}
+
+.email{
+    margin: 5px;
+}
+
+.age{
+    margin: 5px;
+}
