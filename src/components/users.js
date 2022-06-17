@@ -3,12 +3,13 @@ import '../styled/users.css'
 
 function Users({ data }) {
 
-const CreateRandomAge = () =>{
-    let firstAge = Math.floor(Math.random()*10)
+const CreateRandomAge = () =>{ //새로운 값을 추가하고 싶어서 랜덤으로 값을 정하는 함수를 만들어봤다.
+    let firstAge = Math.floor(Math.random()*10)//10은 안나오게 설정했다.
     let secondAge = Math.floor(Math.random()*10)
     return `${firstAge}${secondAge}`
 }
-
+// 값이 들어오기 전에 렌더링이되면 오류가 나서 데이터가 있다면 div를 보여주고
+// 정상적으로 받아온다면 map 메소드를 써서 값을 보여지게 만들었다.
     return (
         <>{data !== "" ? <div className="Users">
             {data.map((el) => {
